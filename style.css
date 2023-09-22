@@ -96,3 +96,60 @@ tr:nth-child(odd) {
     justify-content: space-evenly ;
 }
  
+.flex_direction_row {
+    flex-direction:row ;
+}
+
+.flex_direction_row_reverse {
+    flex-direction:row-reverse ;
+}
+
+.flex_direction_column {
+    flex-direction:column ;
+}
+
+.flex_direction_column_reverse {
+    flex-direction:column-reverse ;
+}
+
+.align_itens_normal {
+    align-items:normal ;
+}
+
+.align_itens_stretch {
+    align-items:stretch ;
+}
+
+.align_itens_center {
+    align-items:center ;
+}
+
+.align_itens_flex_start {
+    align-items:flex-start ;
+}
+
+.align_itens_flex_end {
+    align-items:flex-end ;
+}
+
+.align_itens_start {
+    align-items:start ;
+}
+
+.align_itens_end {
+    align-items:end ;
+}
+
+.align_itens_baseline {
+    align-items:baseline ;
+}
+
+.flex_wrap_nowrap {
+    flex-wrap:nowrap ;
+}
+.flex_wrap_wrap {
+    flex-wrap:wrap ;
+}
+.flex_wrap_wrap_reverse {
+    flex-wrap:wrap-reverse ;
+}
