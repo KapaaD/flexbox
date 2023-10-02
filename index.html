@@ -13,11 +13,12 @@
             <li id="topo"><a href="#justify-content">Justify_content</a></li>
             <li><a href="#flex_direction">Flex_direction</a></li>
             <li><a href="#align_itens">Align_itens</a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li><a href="#flex-wrap">flex_wrap</a></li>
+            <li><a href="#flex-flow"></a>Flex_flow</li>
+            <li><a href="#align-content">align_content</a></li>
         </ul>
+
+    </nav>   
 
     <h1>Flexbox</h1>
 
@@ -25,8 +26,15 @@
 
     <h3>display: flex</h3>
 
+    <h3>Os proximos 2 valores poderam ser usados em todas as propriedades a seguir.</h3>
+
+    <h4>initial</h4>
+    <p class="descricao_propriedade">Ultiliza sempre o valor padrão da propriedade.</p>
+
+    <h4>inherit</h4>
+    <p class="descricao_propriedade">Ultiliza sempre o valor herdado do pai.</p>
     <p class="descricao_propriedade">
-        A propriedade display flex teve ser a primeira a ser declarada no  CSS. A partir dela é que o CSS vai entender que precisa estilizar o conteúdo do contêiner com a Caixa Flexivel (Flexbox)
+        A propriedade display flex teve ser a primeira a ser declarada no  CSS. A partir dela é que o CSS vai entender que precisa estilizar o conteúdo do contêiner com a Caixa Flexivel (Flexbox).
     </p>
 
     <p>Exemplo</p>
@@ -68,7 +76,7 @@
     <h4>center</h4>
 
     <p class="descricao_propriedade">
-        A propriedade justify-content pode ser usada para justificar o conteudo do elemento conteiner em seu eixo primario, ou sweja, eixo x (row, row-reverse) ou eixo y (column, column-reverse).
+        A propriedade justify-content pode ser usada para justificar o conteudo do elemento conteiner em seu eixo primario, ou seja, eixo x (row, row-reverse) ou eixo y (column, column-reverse).
     </p>
 
     <h4>Center</h4>
@@ -366,14 +374,14 @@
         <div class="contido">5</div>
     </div>
 
-<h3 id="flex_wrap">flex_wrap</h3>   
+<h3 id="flex-wrap">flex_wrap</h3>   
     
 <p class="descricao_propriedade">O valor "flex_wrap" define se os itens flexíveis são forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas.</p>
 
     <h4>flex_nowrap</h4>
 
     <p class="descricao_propriedade">  
-    O valor "nowrap" especifica que os itens flexíveis não serão agrupados
+    O valor "nowrap" especifica que os itens flexíveis não serão agrupados.
     </p>
 
     <p>Exemplo</p>
@@ -402,7 +410,7 @@
         <div class="contido">5</div>
     </div>
 
-    <h4></h4>
+    <h4>wrap_reverse</h4>
 
     <p class="descricao_propriedade">
     O valor "wrap_reverse" especifica que os itens flexíveis serão agrupados, se necessário, na ordem inversa.
@@ -418,14 +426,122 @@
         <div class="contido">5</div>
     </div>
 
-    <h4></h4>
+<h3>flex_flow</h3>
+<p id="flex-flow" class="descricao_propriedade">
+    O valor "flex-flow" é uma propriedade de declaração única (shorthand) de usar as propriedades flex-direction e flex-wrap que, juntas, definem os Eixos de um flex container.
+</p>
+
+    <p>Exemplo</p>
+
+    <div class="container display_flex flex_flow">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+<h3 id="align-content">align_content</h3>
+<p class="descricao_propriedade">
+    O valor "align-content" alinha as linhas de um container flex quando há espaço extra no eixo cruzado. 
+</p>
+
+    <h4>stretch</h4>
     <p class="descricao_propriedade">
-        
+     O valor stretch alinha as linhas esticando-as para ocupar o espaço restante.</p>
+    <p>Exemplo</p>
+
+    <div class="container display_flex align_content_stretch">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>center</h4>
+    <p class="descricao_propriedade">
+    O valor "center" alinha as linhas são empacotando-as em direção ao centro do flex container.  
     </p>
 
     <p>Exemplo</p>
 
-    <div class="container display_flex  ">
+    <div class="container display_flex align_content_center">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>flex_start</h4>
+    <p class="descricao_propriedade">
+    o valor "flex_start" alinha as linhas empacotando-as no início do flex container.
+    </p>
+
+    <p>Exemplo</p>
+
+    <div class="container display_flex align_content_flex_start">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>flex_end</h4>
+    <p class="descricao_propriedade">
+    O valor "flex_end" alinha as linhas embalando-as no final do flex container.
+    </p>
+
+    <p>Exemplo</p>
+
+    <div class="container display_flex align_content_flex_end">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>space_between</h4>
+    <p class="descricao_propriedade">
+    O valor "space-betwwen" alinha aslinhas distribuindo-as uniformemente no flex container. 
+    </p>
+
+    <p>Exemplo</p>
+
+    <div class="container display_flex align_content_space_between">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>space_around</h4>
+    <p class="descricao_propriedade">
+    O valor "space-around" alinha as linhas distribuindo-as uniformemente no flex container, com espaços de metade do tamanho em cada extremidade
+    </p>
+
+    <p>Exemplo</p>
+
+    <div class="container display_flex align_content_space_around">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+    
+    <h4>space_evenly</h4>
+    <p class="descricao_propriedade">
+    O valor "space-evenly" alinhando as linhas distribuindo-as uniformemente no flex container, com espaço igual ao seu redor.
+    </p>
+
+    <p>Exemplo</p>
+
+    <div class="container display_flex align_content_space_evenly">
         <div class="contido">1</div>
         <div class="contido">2</div>
         <div class="contido">3</div>
